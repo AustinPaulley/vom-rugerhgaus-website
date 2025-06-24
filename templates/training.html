@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="training-page">
+  <div class="training-card">
+    <video controls preload="metadata" class="training-video">
+      <source
+        src="{{ url_for('static', filename='videos/training.mp4') }}"
+        type="video/mp4"
+      >
+      Your browser doesn’t support HTML5 video.
+    </video>
+    <div class="training-info">
+      <h3>Training at Vom Rugerhaus</h3>
+      <p>
+        At Vom Rugerhaus, we believe every Dog deserves
+        a foundation of trust, respect, and consistency. Our programs—
+        from puppy socialization to advanced protection—are tailored
+        to your dog’s temperament and your goals. Each session is
+        hands-on, reward-based, and led by certified trainers
+        dedicated to bringing out the very best in your companion.
+      </p>
+    </div>
+  </div>
+  <h2 class="gallery-title">Training Gallery</h2>
+  <div class="photo-gallery">
+    {% for photo in photos %}
+      <img
+        src="{{ url_for('static', filename='images/gallery/' ~ photo) }}"
+        alt=""
+        class="gallery-item"
+      >
+    {% endfor %}
+  </div>
+  <div id="gallery-modal" class="gallery-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modal-img" class="modal-content">
+  </div>
+</main>
+<script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+{% endblock %}

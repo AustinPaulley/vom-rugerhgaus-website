@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="females-page">
+
+  {% for dog in females %}
+    <div class="female-card">
+      <h2 class="female-title">{{ dog.name }}</h2>
+
+      <div class="female-photos">
+        {% for img in dog.photos %}
+          <img
+            src="{{ url_for('static', filename='images/females/' ~ img) }}"
+            alt="{{ dog.name }}"
+            class="female-photo"
+          >
+        {% endfor %}
+      </div>
+      <div class="female-info">
+        {% for line in dog.pedigree %}
+          <p>{{ line }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+
+</main>
+{% endblock %}

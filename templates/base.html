@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vom Rugerhaus German Shepherds</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Cinzel:wght@700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <a href="{{ url_for('index') }}" class="logo-link">
+      <img
+        src="{{ url_for('static', filename='images/VomRugerhaus.png') }}"
+        alt="Vom Rugerhaus Logo"
+        class="logo"
+      >
+    </a>
+    <nav>
+      <a href="{{ url_for('training') }}">Training</a>
+      <a href="{{ url_for('studs') }}">Studs</a>
+      <a href="{{ url_for('females') }}">Females</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-messages">
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  {% block content %}{% endblock %}
+  <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+</body>
+</html>

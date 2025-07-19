@@ -615,3 +615,19 @@ nav a:hover {
   font-style: italic;
   color: #ddd;          /* slightly lighter than white */
 }
+
+.testimonials-list {
+  list-style: disc;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+.testimonials-list li {
+  margin-bottom: 1.5rem;
+  color: #fff;               /* or whatever your text color is */
+  line-height: 1.6;
+}
+.testimonials-list li strong {
+  color: var(--accent);
+  display: block;
+  margin-top: 0.5rem;
+}

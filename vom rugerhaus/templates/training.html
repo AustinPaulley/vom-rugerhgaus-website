@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="training-page">
+  <div class="training-card">
+    <video controls preload="metadata" class="training-video">
+      <source
+        src="{{ url_for('static', filename='videos/training.mp4') }}"
+        type="video/mp4"
+      >
+      Your browser doesn’t support HTML5 video.
+    </video>
+    <div class="training-info">
+      <h3>Training at Vom Rugerhaus</h3>
+      <p>
+      Our specialized programs focus on <strong>puppy socialization</strong>, <strong>behavior modification</strong>, and <strong>advanced obedience</strong>.  
+      Whether you’re laying the foundation for a confident, well-mannered puppy, correcting unwanted habits, or fine-tuning obedience cues, every session is personalized to your dog’s temperament and your goals.
+    </p>
+
+    <p>
+      We also offer <strong>boarding &amp; training</strong>, giving your companion a safe, supervised environment to learn and grow while you’re away.  
+      Under the guidance of our trusted trainers, your dog receives consistent, hands-on instruction—bringing out the very best in every canine.
+    </p>
+    </div>
+  </div>
+  <h2 class="gallery-title">Training Gallery</h2>
+  <div class="photo-gallery">
+    {% for photo in photos %}
+      <img
+        src="{{ url_for('static', filename='images/gallery/' ~ photo) }}"
+        alt=""
+        class="gallery-item"
+      >
+    {% endfor %}
+  </div>
+  <div id="gallery-modal" class="gallery-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modal-img" class="modal-content">
+  </div>
+</main>
+<script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+{% endblock %}

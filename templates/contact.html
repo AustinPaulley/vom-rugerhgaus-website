@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container">
+  <div class="contact-card">
+
+    <!-- Contact details with gold border -->
+    <div class="contact-info">
+      <h4 class="email">Email</h4>
+      <p>vomrugerhaus@gmail.com</p>
+
+      <h4 class="socials">Socials</h4>
+      <p>
+        Instagram: @Vom_rugerhaus<br>
+        Facebook: Vom Rugerhaus
+      </p>
+
+      <h4 class="phone">Contact</h4>
+      <p>(857) 206-3189</p>
+
+      <!-- Restored note -->
+      <p class="contact-note">
+        Please contact me for more information.
+      </p>
+    </div>
+
+    <!-- Family photo with gold border -->
+    <div class="contact-family">
+      <img
+        src="{{ url_for('static', filename='images/family.jpg') }}"
+        alt="Vom Rugerhaus Family Photo"
+      >
+    </div>
+
+  </div>
+</main>
+{% endblock %}

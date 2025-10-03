@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="studs-page">
+  <h2 class="female-title">Magnum</h2>
+  <div class="stud-photos">
+    {% for photo in photos %}
+      <img
+        src="{{ url_for('static', filename='images/males/' ~ photo) }}"
+        alt="Magnum"
+        class="males-photo"
+      >
+    {% endfor %}
+  </div>
+  <div class="female-info">
+    <p>V1 Adal Von Kapitan Max HIGH IGP1 KKL</p>
+    <p>Sire: VA3 (COAPA) Barack De Casa De Campo IGP3 KKL</p>
+    <p>Dam: SG Alina Hunde Harmone IGP1 KKL</p>
+    <p>SV HD/ Normal</p>
+    <p>SV ED/ Noch</p>
+  </div>
+</main>
+{% endblock %}

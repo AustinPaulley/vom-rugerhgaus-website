@@ -2,28 +2,25 @@
 {% block content %}
 <main class="females-page">
 
-  <!-- Photos row (gold borders, same as other pages) -->
+  <!-- Single photo (centered, gold border using existing classes) -->
   <div class="female-photos">
     <img
-      src="{{ url_for('static', filename='images/litters/Seppel.jpg') }}"
-      alt="V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL">
-    <img
-      src="{{ url_for('static', filename='images/litters/Lola.jpg') }}"
-      alt="SG Nicholas’ Lola">
+      src="{{ url_for('static', filename='images/litters/new_litter.jpg') }}"
+      alt="New litter — Seppel × Lola">
   </div>
 
   <!-- Boxed description card (black with gold border) -->
   <section class="about-card" style="max-width: 800px; margin: 0 auto;">
-    <!-- Bigger heading -->
+    <!-- Bigger, gold accent heading -->
     <p style="
       text-align:center;
       font-weight:700;
       color: var(--accent);
-      font-size: 1.75rem;   /* was ~1rem; make it stand out */
+      font-size: 1.75rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     ">
-      ✨ Upcoming Litter ✨
+      ✨ New Litter ✨
     </p>
 
     <p><strong>V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL</strong></p>
@@ -41,10 +38,11 @@
     <p>💥 2× VA (BSZS) Chacco v.d. Freiheit Westerholt &nbsp;(SCHH3)</p>
 
     <p style="margin-top:1rem;">
-      We are delighted to present this remarkable planned litter, featuring a superior
-      pedigree and temperament. We are thankful for the opportunity to pair this exceptional
-      male with Miss Lola. Puppies are expected to be due at the end of November!
+      We are delighted to present this remarkable litter born on Black Friday, Lola welcomed two beautiful girls and one beautiful boy.
     </p>
+    <p> ✨1st pick - Reserved </p>
+    <p> ✨2nd pick - Available </p>
+    <p> ✨3rd pick - Available </p>
 
     <!-- Contact button -->
     <div style="text-align:center; margin-top: 1.25rem;">
@@ -58,11 +56,10 @@
            text-decoration: none;
            font-weight: 700;
          ">
-        Contact for Information
+        Contact Us for Information
       </a>
     </div>
   </section>
 
 </main>
 {% endblock %}
-

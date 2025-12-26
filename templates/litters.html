@@ -2,16 +2,25 @@
 {% block content %}
 <main class="females-page">
 
-  <!-- Single photo (centered, gold border using existing classes) -->
+  <!-- Single photo (centered) -->
   <div class="female-photos">
     <img
       src="{{ url_for('static', filename='images/litters/new_litter.jpg') }}"
       alt="New litter — Seppel × Lola">
   </div>
 
-  <!-- Boxed description card (black with gold border) -->
+    <div class="female-photos" style="margin-top: 2rem;">
+    <img
+      src="{{ url_for('static', filename='images/litters/puppy1.jpg') }}"
+      alt="German Shepherd puppy">
+    <img
+      src="{{ url_for('static', filename='images/litters/puppy2.jpg') }}"
+      alt="German Shepherd puppy">
+  </div>
+
+
+  <!-- Description card -->
   <section class="about-card" style="max-width: 800px; margin: 0 auto;">
-    <!-- Bigger, gold accent heading -->
     <p style="
       text-align:center;
       font-weight:700;
@@ -26,25 +35,25 @@
     <p><strong>V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL</strong></p>
 
     <p>Seppel’s pedigree consists of</p>
-    <p>💥 VA1 (USA 2017) &nbsp;V11 (BSZS ‘16) Keule vom Holtkamper Hof &nbsp;IPO3 KKL</p>
-    <p>💥 VA2 (USA ‘17), V13 (BSZS ‘13) Fight vom Holtkamper Hof &nbsp;IPO3 KKL</p>
+    <p>💥 VA1 (USA 2017) V11 (BSZS ‘16) Keule vom Holtkamper Hof IPO3 KKL</p>
+    <p>💥 VA2 (USA ‘17), V13 (BSZS ‘13) Fight vom Holtkamper Hof IPO3 KKL</p>
 
     <p style="text-align:center; font-weight:700; margin: 1rem 0;">x</p>
 
     <p><strong>SG Nicholas’ Lola</strong></p>
 
     <p>Lola’s pedigree consists of</p>
-    <p>💥 V (BSZS) Kongo von der Freiheit Westerholt &nbsp;IPO3 KKL</p>
-    <p>💥 2× VA (BSZS) Chacco v.d. Freiheit Westerholt &nbsp;(SCHH3)</p>
+    <p>💥 V (BSZS) Kongo von der Freiheit Westerholt IPO3 KKL</p>
+    <p>💥 2× VA (BSZS) Chacco v.d. Freiheit Westerholt (SCHH3)</p>
 
     <p style="margin-top:1rem;">
-      We are delighted to present this remarkable litter born on Black Friday, Lola welcomed two beautiful girls and one beautiful boy.
+      We are delighted to present this remarkable litter born on Black Friday.
+      Lola welcomed two beautiful girls and one beautiful boy.
     </p>
-    <p> ✨1st pick - Reserved </p>
-    <p> ✨2nd pick - Available </p>
-    <p> ✨3rd pick - Available </p>
 
-    <!-- Contact button -->
+    <p>✨ 1st pick – Reserved</p>
+    <p>✨ 2nd pick – Reserved</p>
+
     <div style="text-align:center; margin-top: 1.25rem;">
       <a href="{{ url_for('contact') }}"
          style="
@@ -60,6 +69,5 @@
       </a>
     </div>
   </section>
-
 </main>
 {% endblock %}

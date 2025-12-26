@@ -28,7 +28,7 @@ def females():
             'name': 'Fang',
             'photos': ['Fang1.jpg', 'Fang2.jpg'],
             'pedigree': [
-                'SG Fang Canine Extreme WB',
+                'SG11 BSZS Leading Lady Canine Extreme WB BH',
                 'Sire: VA2 (A-SVÖ 2022) Zamp Von Aurelius IGP3 KKL',
                 'Dam: V Daphne Vom Holtkamper Hof IGP1 KKL' ,
                 'OFA Good Hips' ,

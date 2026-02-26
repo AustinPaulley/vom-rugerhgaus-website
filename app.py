@@ -25,6 +25,16 @@ def studs():
 def females():
     female_data = [
         {
+            'name': 'Ally',
+            'photos': ['Ally1.jpg'],
+            'pedigree': [
+                'Sire: V2 Seppel Vom Holtkamper Hof IGP1 KKL Lifetime',
+                'Dam: SG Nicholas’ Lola',
+                'Currently in training here at Vom Rugerhaus! ',
+                'Stay tuned for future updates on this beauty!',
+            ]
+        },
+        {
             'name': 'Fang',
             'photos': ['Fang1.jpg', 'Fang2.jpg'],
             'pedigree': [

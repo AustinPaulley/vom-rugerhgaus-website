@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, flash
 app = Flask(__name__)
-app.secret_key = 'your-secret-key'  # Replace with a secure environment variable
+app.secret_key = 'your-secret-key'
 @app.route('/')
 def index():
     dogs = [

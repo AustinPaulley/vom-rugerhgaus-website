@@ -98,6 +98,9 @@ def litters():
         {
             'photos': ['Seppel.jpg', 'Lola.jpg'],
             'details': [
+                "Litter arrived March 20th",
+                "Harmony & Zac welcomed 8 beautiful puppies",
+                "6 boys and 2 girls",
                 "V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL",
                 "Pedigree: VA1 Keule vom Holtkamper Hof IPO3 KKL",
                 "Pedigree: VA2 Fight vom Holtkamper Hof IPO3 KKL",

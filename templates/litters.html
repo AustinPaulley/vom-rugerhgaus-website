@@ -11,36 +11,50 @@
     font-size: 2rem;
     margin: 2.5rem 0 1.5rem;
   ">
-    ✨ Upcoming Litter ✨
+    ✨ New Litter ✨
   </p>
 
-  <!-- Two parent photos -->
-  <div class="female-photos">
-    <img
-      src="{{ url_for('static', filename='images/litters/JAMSSlitter.png') }}"
-      alt="AKC Ch / Int Ch Chambrays Life Is Good At Bonita Creek JAMSS">
-    <img
-      src="{{ url_for('static', filename='images/litters/Harmonylitter.jpg') }}"
-      alt="Chambray’s Rhythm n’ Harmony">
-  </div>
-
+  <!-- Single main photo -->
+  <div class="female-photos litter-wide">
+  <img
+    src="{{ url_for('static', filename='images/litters/JAMSSlitter.png') }}"
+    alt="Harmony & Zac Litter">
+</div>
   <!-- Upcoming litter description -->
-  <section class="about-card" style="max-width: 800px; margin: 2rem auto 0;">
-    <p><strong>AKC Ch / Int Ch</strong></p>
-    <p><strong>Chambrays Life Is Good At Bonita Creek JAMSS</strong></p>
-    <p><strong>OFA Hips:</strong> Good</p>
-    <p><strong>OFA Elbows:</strong> Normal</p>
+<section class="about-card" style="max-width: 800px; margin: 2rem auto 0;">
 
-    <p style="text-align:center; font-weight:700; margin: 1rem 0;">x</p>
+  <p style="
+    text-align:center;
+    font-weight:700;
+    font-size:1.25rem;
+    margin-bottom: 1rem;
+  ">
+    Litter Arrived March 20th
+  </p>
 
-    <p><strong>Chambray’s Rhythm n’ Harmony</strong></p>
-    <p><strong>OFA Hips:</strong> Good</p>
-    <p><strong>OFA Elbows:</strong> Normal</p>
+  <p style="text-align:center;">
+    Harmony & Zac welcomed 8 beautiful puppies
+  </p>
 
-    <p style="margin-top:1rem;">
-      We are excited to announce this upcoming litter.
-      Please contact us for reservation information and availability.
-    </p>
+  <p style="
+    text-align:center;
+    font-weight:600;
+    margin-bottom: 1.5rem;
+  ">
+    6 boys and 2 girls
+  </p>
+
+  <p><strong>AKC Ch / Int Ch</strong></p>
+  <p><strong>Chambrays Life Is Good At Bonita Creek JAMSS</strong></p>
+  <p><strong>OFA Hips:</strong> Good</p>
+  <p><strong>OFA Elbows:</strong> Normal</p>
+
+  <p style="text-align:center; font-weight:700; margin: 1rem 0;">x</p>
+
+  <p><strong>Chambray’s Rhythm n’ Harmony</strong></p>
+  <p><strong>OFA Hips:</strong> Good</p>
+  <p><strong>OFA Elbows:</strong> Normal</p>
+
 
     <div style="text-align:center; margin-top: 1.25rem;">
       <a href="{{ url_for('contact') }}"
@@ -57,5 +71,6 @@
       </a>
     </div>
   </section>
+
 </main>
 {% endblock %}

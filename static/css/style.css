@@ -615,3 +615,11 @@ nav a:hover {
   font-style: italic;
   color: #ddd;          /* slightly lighter than white */
 }
+
+
+.litter-wide img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  object-fit: contain;
+}

@@ -35,17 +35,6 @@ def females():
             ]
         },
         {
-            'name': 'Fang',
-            'photos': ['Fang1.jpg', 'Fang2.jpg'],
-            'pedigree': [
-                'SG11 BSZS Leading Lady Canine Extreme WB BH',
-                'Sire: VA2 (A-SVÖ 2022) Zamp Von Aurelius IGP3 KKL',
-                'Dam: V Daphne Vom Holtkamper Hof IGP1 KKL' ,
-                'OFA Good Hips' ,
-                'OFA Normal Elbows'
-            ]
-        },
-        {
             'name': 'Lady',
             'photos': ['Lady1.jpg'],
             'pedigree': [
@@ -92,27 +81,29 @@ def contact():
         return redirect('/contact')
     return render_template('contact.html')
 
-@app.route('/litters')
-def litters():
-    litter_data = [
-        {
-            'photos': ['Seppel.jpg', 'Lola.jpg'],
-            'details': [
-                "Litter arrived March 20th",
-                "Harmony & Zac welcomed 8 beautiful puppies",
-                "6 boys and 2 girls",
-                "V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL",
-                "Pedigree: VA1 Keule vom Holtkamper Hof IPO3 KKL",
-                "Pedigree: VA2 Fight vom Holtkamper Hof IPO3 KKL",
-                "x",
-                "SG Nicholas’ Lola",
-                "Pedigree: V Kongo von der Freiheit Westerholt IPO3 KKL",
-                "Pedigree: 2× VA Chacco v.d. Freiheit Westerholt SCHH3",
-                "Planned pairing with excellent temperament and pedigree"
-            ]
-        }
-    ]
-    return render_template('litters.html', litters=litter_data)
+# TEMPORARILY DISABLED LITTERS PAGE
+
+# @app.route('/litters')
+# def litters():
+#     litter_data = [
+#         {
+#             'photos': ['Seppel.jpg', 'Lola.jpg'],
+#             'details': [
+#                 "Litter arrived March 20th",
+#                 "Harmony & Zac welcomed 8 beautiful puppies",
+#                 "6 boys and 2 girls",
+#                 "V2 (USA) Seppel vom Holtkamper Hof IGP1 KKL",
+#                 "Pedigree: VA1 Keule vom Holtkamper Hof IPO3 KKL",
+#                 "Pedigree: VA2 Fight vom Holtkamper Hof IPO3 KKL",
+#                 "x",
+#                 "SG Nicholas’ Lola",
+#                 "Pedigree: V Kongo von der Freiheit Westerholt IPO3 KKL",
+#                 "Pedigree: 2× VA Chacco v.d. Freiheit Westerholt SCHH3",
+#                 "Planned pairing with excellent temperament and pedigree"
+#             ]
+#         }
+#     ]
+#     return render_template('litters.html', litters=litter_data)
 
 
 if __name__ == '__main__':
